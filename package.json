@@ -1,5 +1,5 @@
 {
-  "name": "@leimingyun/translate-react",
+  "name": "translate-react",
   "description": "一个基于 i18n-jsautotranslate 的 React 翻译组件",
   "version": "1.0.0",
   "type": "module",
