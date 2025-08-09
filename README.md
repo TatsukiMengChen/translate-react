@@ -1,5 +1,7 @@
 # translate-react
 
+> 在线演示地址（GitHub Pages）：[https://tatsukimengchen.github.io/translate-react/](https://tatsukimengchen.github.io/translate-react/)
+
 一个基于 `i18n-jsautotranslate` 的 React 翻译组件包，提供简洁易用的多语言切换功能。
 
 ## 特性

@@ -21,6 +21,16 @@ function App() {
           <p>欢迎使用 translate-react 组件库！</p>
           <p>Welcome to translate-react component library!</p>
         </div>
+        <div>
+          Github：
+          <a
+            href="https://github.com/TatsukiMengChen/translate-react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://github.com/TatsukiMengChen/translate-react
+          </a>
+        </div>
       </header>
     </div>
   );
