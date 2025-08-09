@@ -1,20 +1,47 @@
 {
-  "name": "translate-react",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@leimingyun/translate-react",
+  "description": "一个基于 i18n-jsautotranslate 的 React 翻译组件",
+  "version": "1.0.0",
   "type": "module",
+  "main": "./dist/translate-react.cjs.js",
+  "module": "./dist/translate-react.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/translate-react.es.js",
+      "require": "./dist/translate-react.cjs.js"
+    },
+    "./styles": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "i18n",
+    "translate",
+    "translation",
+    "internationalization",
+    "multilingual",
+    "i18n-jsautotranslate"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:lib": "vite build --config vite.lib.config.ts && tsc --project tsconfig.lib.json",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "pnpm run build:lib"
   },
   "dependencies": {
+    "i18n-jsautotranslate": "^3.17.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
+    "@types/node": "^24.2.1",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^4.7.0",
