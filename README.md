@@ -26,7 +26,7 @@ pnpm add translate-react i18n-jsautotranslate
 ### 基本使用
 
 ```tsx
-import { Translate, initTranslate } from "@leimingyun/translate-react";
+import { Translate, initTranslate } from "translate-react";
 
 const languages = [
   { label: "简体中文", value: "chinese_simplified" },
@@ -86,41 +86,21 @@ interface Language {
 }
 ```
 
-## 支持的语言
+## 支持的语言(举例)
 
-| 语言代码              | 语言名称 |
-| --------------------- | -------- |
-| `chinese_simplified`  | 简体中文 |
-| `chinese_traditional` | 繁体中文 |
-| `english`             | 英语     |
-| `japanese`            | 日语     |
-| `korean`              | 韩语     |
-| `french`              | 法语     |
-| `german`              | 德语     |
-| `spanish`             | 西班牙语 |
-| `russian`             | 俄语     |
-| `arabic`              | 阿拉伯语 |
+> 所有支持的语言详见：https://translate.zvo.cn/4054.html
 
-## 样式自定义
-
-组件使用 CSS Modules，你可以通过以下方式自定义样式：
-
-```css
-/* 覆盖默认样式 */
-.translate {
-  /* 你的样式 */
-}
-
-.translateDropdown {
-  /* 下拉菜单样式 */
-}
-```
+| 语言代码             | 语言名称 |
+| -------------------- | -------- |
+| `chinese_simplified` | 简体中文 |
+| `english`            | 英语     |
+| `japanese`           | 日语     |
+| `korean`             | 韩语     |
 
 ## 注意事项
 
-1. **单次初始化**：确保在整个应用中只调用一次 `initTranslate()`
-2. **语言选择标签**：本组件会自动隐藏 `i18n-jsautotranslate` 的默认语言选择标签
-3. **DOM 监听**：组件会自动启动 DOM 变化监听，动态添加的内容也会被翻译
+1. **语言选择标签**：本组件会自动隐藏 `i18n-jsautotranslate` 的默认语言选择标签
+2. **DOM 监听**：组件会自动启动 DOM 变化监听，动态添加的内容也会被翻译
 
 ## 许可证
 
